@@ -57,26 +57,26 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 
 ---
 
-# Sponsorname audit details
-- Total Prize Pool: XXX XXX USDC (Notion: Total award pool)
-  - HM awards: XXX XXX USDC (Notion: HM (main) pool)
-  - Analysis awards: XXX XXX USDC (Notion: Analysis pool)
-  - QA awards: XXX XXX USDC (Notion: QA pool)
-  - Bot Race awards: XXX XXX USDC (Notion: Bot Race pool)
-  - Gas awards: XXX XXX USDC (Notion: Gas pool)
-  - Judge awards: XXX XXX USDC (Notion: Judge Fee)
-  - Lookout awards: XXX XXX USDC (Notion: Sum of Pre-sort fee + Pre-sort early bonus)
+# Brahma.fi audit details
+- Total Prize Pool: $31,250 USDC (Notion: Total award pool)
+  - HM awards: $19,500 USDC (Notion: HM (main) pool)
+  - Analysis awards: $1,500 USDC (Notion: Analysis pool)
+  - QA awards: $750 USDC (Notion: QA pool)
+  - Bot Race awards: $2,250 USDC (Notion: Bot Race pool)
+  - Gas awards: $750 USDC (Notion: Gas pool)
+  - Judge awards: $3,600 USDC (Notion: Judge Fee)
+  - Lookout awards: $2,400 USDC (Notion: Sum of Pre-sort fee + Pre-sort early bonus)
   - Scout awards: $500 USDC (Notion: Scout fee - but usually $500 USDC)
   - (this line can be removed if there is no mitigation) Mitigation Review: XXX XXX USDC (*Opportunity goes to top 3 certified wardens based on placement in this audit.*)
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-AuditName/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-10-brahma/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
-- Starts TBD XXX XXX XX 20:00 UTC (ex. `Starts March 22, 2023 20:00 UTC`)
-- Ends TBD XXX XXX XX 20:00 UTC (ex. `Ends March 30, 2023 20:00 UTC`)
+- Starts October 13, 2023 20:00 UTC (ex. `Starts March 22, 2023 20:00 UTC`)
+- Ends October 20, 2023 20:00 UTC (ex. `Ends March 30, 2023 20:00 UTC`)
 
 ## Automated Findings / Publicly Known Issues
 
-Automated findings output for the audit can be found [here](bot-report.md) within 24 hours of audit opening.
+Automated findings output for the audit can be found [here](https://github.com/code-423n4/2023-10-brahma/blob/main/bot-report.md) within 24 hours of audit opening.
 
 *Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
 
@@ -138,20 +138,20 @@ Automated findings output for the audit can be found [here](bot-report.md) withi
 
 ```
 - If you have a public code repo, please share it here:  
-- How many contracts are in scope?:   
-- Total SLoC for these contracts?:  
-- How many external imports are there?:  
-- How many separate interfaces and struct definitions are there for the contracts within scope?:  
-- Does most of your code generally use composition or inheritance?:   
-- How many external calls?:   
-- What is the overall line coverage percentage provided by your tests?:
-- Is this an upgrade of an existing system?:
-- Check all that apply (e.g. timelock, NFT, AMM, ERC20, rollups, etc.): 
+- How many contracts are in scope?: 16   
+- Total SLoC for these contracts?: 872
+- How many external imports are there?: 3 
+- How many separate interfaces and struct definitions are there for the contracts within scope?: 6 
+- Does most of your code generally use composition or inheritance?: Composition
+- How many external calls?: 6   
+- What is the overall line coverage percentage provided by your tests?: 100
+- Is this an upgrade of an existing system?: False
+- Check all that apply (e.g. timelock, NFT, AMM, ERC20, rollups, etc.): Multi-Chain
 - Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   
 - Please describe required context:   
-- Does it use an oracle?:  
-- Describe any novel or unique curve logic or mathematical models your code uses: 
-- Is this either a fork of or an alternate implementation of another project?:   
+- Does it use an oracle?: No
+- Describe any novel or unique curve logic or mathematical models your code uses: NA
+- Is this either a fork of or an alternate implementation of another project?: NA   
 - Does it use a side-chain?:
 - Describe any specific areas you would like addressed:
 ```
