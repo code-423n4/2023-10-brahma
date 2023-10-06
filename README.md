@@ -58,17 +58,15 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 ---
 
 # Brahma.fi audit details
-- Total Prize Pool: $31,250 USDC (Notion: Total award pool)
-  - HM awards: $19,500 USDC (Notion: HM (main) pool)
-  - Analysis awards: $1,500 USDC (Notion: Analysis pool)
-  - QA awards: $750 USDC (Notion: QA pool)
-  - Bot Race awards: $2,250 USDC (Notion: Bot Race pool)
-  - Gas awards: $750 USDC (Notion: Gas pool)
-  - Judge awards: $3,600 USDC (Notion: Judge Fee)
-  - Lookout awards: $2,400 USDC (Notion: Sum of Pre-sort fee + Pre-sort early bonus)
-  - Scout awards: $500 USDC (Notion: Scout fee - but usually $500 USDC)
-  - (this line can be removed if there is no mitigation) Mitigation Review: XXX XXX USDC (*Opportunity goes to top 3 certified wardens based on placement in this audit.*)
-- Join [C4 Discord](https://discord.gg/code4rena) to register
+- Total Prize Pool: $31,250 USDC
+  - HM awards: $19,500 USDC
+  - Analysis awards: $1,500 USDC
+  - QA awards: $750 USDC
+  - Bot Race awards: $2,250 USDC
+  - Gas awards: $750 USDC
+  - Judge awards: $3,600 USDC
+  - Lookout awards: $2,400 USDC
+  - Scout awards: $500 USDC
 - Submit findings [using the C4 form](https://code4rena.com/contests/2023-10-brahma/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts October 13, 2023 20:00 UTC (ex. `Starts March 22, 2023 20:00 UTC`)
@@ -137,7 +135,7 @@ Automated findings output for the audit can be found [here](https://github.com/c
 [ ⭐️ SPONSORS: please confirm/edit the information below. ]
 
 ```
-- If you have a public code repo, please share it here:  
+- If you have a public code repo, please share it here: NA
 - How many contracts are in scope?: 16   
 - Total SLoC for these contracts?: 872
 - How many external imports are there?: 3 
