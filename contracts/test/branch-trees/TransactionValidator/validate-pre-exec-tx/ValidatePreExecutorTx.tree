@@ -1,0 +1,6 @@
+ValidatePreExecutorTransaction.t.sol::validatePreExecutorTransaction(address, /*msgSender */address from,address to,uint256 value,bytes memory data,Enum.Operation operation,bytes memory signatures)
+├─ When {policyValidator} validates the signatures
+│   └─ It should return without reverting
+└─ When {policyValidator} invalidates the signatures
+    └─ It should revert with {TxnUnAuthorized()}
+    

@@ -1,0 +1,8 @@
+ValidatePostTransaction.t.sol::validatePostTransaction(bytes32, /*txHash */ bool, /*success */ address subAccount)
+├─ When {subAccount} doesn't have it's guard on.
+│   └─ It should revert with {InvalidGuard()}
+└─ When {subAccount} has it's guard on
+    ├─ When {subAccount} has owner console enabled as module
+    │   └─ It should return without reverting
+    └─ When {subAccount} has owner console disabled as module
+        └─ It should revert with {InvalidModule()}

@@ -1,0 +1,20 @@
+DeploySubAccount.t.sol::deploySubAccount(address[] calldata _owners, uint256 _threshold, bytes32 _policyCommit)
+├─ When _policyCommit is bytes(0)
+│   └─ It should revert with {InvalidCommitment()}
+└─ When _policyCommit is not bytes(0)
+    ├─ When {msg.sender} is not a wallet
+    │   └─ It should revert with {NotWallet()}
+    └─ When {msg.sender} is a wallet
+        ├─ It should create safe using _createSafe() function
+        ├─ It should register safe as sub account on wallet registry
+        └─ It should call {updatePolicy} on policy registry
+
+_createSafe() 
+├─ It should create a safe with initializer to enable console account as module and `SafeModerator` as guard
+├─ When safe creation fails.
+│   ├─ When safe create fails with not "Create2 call failed".
+│   │   └─ It should revert with `SafeProxyCreationFailed()`
+│   └─ When safe create fails with "Create2 call failed".
+│       └─ It should retry to create safe using _createSafe() with a new nonce
+└─ When safe creation succeeds
+    └─ It should returns safe address

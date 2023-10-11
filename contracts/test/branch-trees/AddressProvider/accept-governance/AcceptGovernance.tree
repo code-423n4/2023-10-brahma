@@ -1,0 +1,7 @@
+AcceptGovernance.t.sol::acceptGovernance()
+├─ When {msg.sender} is not pendingGovernance
+│   └─ It should revert with {NotPendingGovernance(msg.sender)}
+└─ When {msg.sender} is pendingGovernance
+    ├─ It should emit a {GovernanceTransferred(governance, msg.sender)} event
+    ├─ It should set {governance} to {msg.sender}
+    └─ It should clear pendingGovernance

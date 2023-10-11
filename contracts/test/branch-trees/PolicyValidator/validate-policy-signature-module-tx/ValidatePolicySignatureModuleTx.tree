@@ -1,0 +1,17 @@
+ValidatePolicySignatureModuleTx.t.sol::isPolicySignatureValid(address account, address to, uint256 value, bytes memory data, uint8 operation, bytes memory signatures)
+├─ read nonce from ExecutorPlugin.executorNonce()
+├─ When {expiryEpoch} is less than {block.timestamp} OR {expiryEpoch} is 0
+│   └─ It should revert with {TxnExpired(expiryEpoch)}
+└─ When {expiryEpoch} is greater than or equal to {block.timestamp}
+    ├─ When validator is contract
+    │   ├─ When validator returns EIP1271_MAGIC_VALUE
+    │   │   └─ It should return true
+    │   └─ When validator doesn't returns EIP1271_MAGIC_VALUE
+    │       └─ It should return false
+    └─ When validator is EOA
+        ├─ When attached validator signature is valid
+        │   └─ It should return true
+        └─ When attached validator signature is not valid
+            └─ It should return false
+        
+    

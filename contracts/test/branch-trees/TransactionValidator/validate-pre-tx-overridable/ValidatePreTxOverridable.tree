@@ -1,0 +1,9 @@
+ValidatePreTransactionOverridable.t.sol::validatePreTransactionOverridable(SafeTransactionParams memory txParams)
+├─ When transaction is a guard removal transaction
+│   └─ It should return without reverting
+└─ When transaction is a not a guard removal transaction
+    ├─ When {policyValidator} validates the signatures
+    │   └─ It should return without reverting
+    └─ When {policyValidator} invalidates the signatures
+        └─ It should revert with {TxnUnAuthorized()}
+    

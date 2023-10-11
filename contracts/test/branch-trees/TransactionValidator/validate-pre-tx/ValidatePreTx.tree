@@ -1,0 +1,6 @@
+ValidatePreTransaction.t.sol::validatePreTransaction(SafeTransactionParams memory txParams)
+├─ When {policyValidator} validates the signatures
+│   └─ It should return without reverting
+└─ When {policyValidator} invalidates the signatures
+    └─ It should revert with {TxnUnAuthorized()}
+    

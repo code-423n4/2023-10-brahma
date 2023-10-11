@@ -1,0 +1,37 @@
+ExecuteTransaction.t.sol::executeTransaction(ExecutionRequest memory execRequest)
+├─ When the signatures in execution request are invalid, i.e, not adhering to format
+    ├─ It should revert with {InvalidSignatures()}
+├─ When executor signature is a contract
+│   ├─ When executor returns EIP1271_MAGIC_VALUE
+│   │   └─ checkRegistry_validate_execute()
+│   └─ When executor doesn't returns EIP1271_MAGIC_VALUE
+│       └─ It should revert with {InvalidExecutor()}
+└─ When executor is EOA
+    ├─ When attached executor signature is invalid
+    │   └─ It should revert with {InvalidExecutor()}
+    └─ When attached executor signature is valid
+        └─ checkRegistry_validate_execute()
+        
+
+
+checkRegistry_validate_execute()
+├─ When executor is not registered for account in executor registry
+│   └─ It should revert with {InvalidExecutor()}
+└─ When executor is registered for account in executor registry
+    ├─ When TransactionValidator invalidates the validator signature
+    │   └─ It should revert with {TxnUnAuthorized()}
+    └─ When TransactionValidator validates the validator signature
+        └─ It should execute transaction on sub account as module
+            ├─ When module execution tx reverts
+            │   └─ It should revert with {ModuleExecutionFailed()}
+            └─ When module execution tx is successful
+                ├─ When transaction from wallet reverts
+                │   └─ It should revert with {WalletExecutionFailed()}
+                └─ When transaction from wallet is successful
+                    ├─ When guard has been removed
+                    │   └─ It should revert with {InvalidGuard()}
+                    ├─ When module has been disabled
+                    │   └─ It should revert with {InvalidModule()}
+                    └─ When guard or module hasn't been removed
+                        └─ It should return transaction result
+

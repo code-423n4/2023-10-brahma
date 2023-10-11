@@ -1,0 +1,20 @@
+SetAuthorized.t.sol::setAuthorizedAddress(bytes32 _key, address _authorizedAddress, bool _overrideCheck)
+├─ When the caller is not governance address
+│   └─ It shoud revert with {NotGovernance(sender)}
+└─ When the caller is governance address
+    ├─ When {_authorizedAddress} is ADDRESS_ZERO
+    │   ├─ It shoud revert with {NullAddress()}
+    ├─ When the {_overrideCheck} is false
+    │   ├─ If {_authorizedAddress} is not an EOA, _ensureAddressProvider(_authorizedAddress)
+    │   ├─ It should assign authorized address to given key.
+    │   └─ It should emit {AuthorizedAddressInitialised(_authorizedAddress, _key)} event.
+    └─ When the {_overrideCheck} is true
+        ├─ It should assign authorized address to given key.
+        └─ It should emit {AuthorizedAddressInitialised(_authorizedAddress, _key)} event.
+
+
+_ensureAddressProvider(_authorizedAddress)  
+    ├─ When {addressProviderTarget} on {_authorizedAddress} is not equal to addressProvider (address(this))
+    │   └─ It should revert with {AddressProviderUnsupported()}
+    └─ When {addressProviderTarget} on {_authorizedAddress} is equal to addressProvider (address(this))
+        └─ return

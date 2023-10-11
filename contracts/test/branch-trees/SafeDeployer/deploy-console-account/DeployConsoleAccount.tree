@@ -1,0 +1,16 @@
+DeployConsoleAccount.t.sol::deployConsoleAccount(address[] calldata _owners, uint256 _threshold, bytes32 _policyCommit)
+├─ It should try to create a new safe using _createSafe() function.
+├─ When _policyCommit is not bytes(0)
+│   └─ It should call {updatePolicy} on policy registry
+└─ When _policyCommit is bytes(0)
+    └─ It should return
+
+_createSafe() 
+├─ It should create a safe with initializer to register wallet to `WalletRegistry`
+├─ When safe creation fails.
+│   ├─ When safe create fails with not "Create2 call failed".
+│   │   └─ It should revert with `SafeProxyCreationFailed()`
+│   └─ When safe create fails with "Create2 call failed".
+│       └─ It should retry to create safe using _createSafe() with a new nonce
+└─ When safe creation succeeds
+    └─ It should returns safe address

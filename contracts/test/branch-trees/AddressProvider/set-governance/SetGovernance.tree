@@ -1,0 +1,9 @@
+SetGovernance.t.sol::setGovernance(address _newGovernance)
+├─ When {_newGovernance} address is ADDRESS_ZERO
+│   └─ It shoud revert with {NullAddress()}
+└─ When new governance address is not ADDRESS_ZERO
+    ├─ When the caller is not governance address
+    │   └─ It shoud revert with {NotGovernance(msg.sender)}
+    └─ When the caller is governance address
+        ├─ it should emit a {GovernanceTransferRequested(prevGov, newGov)} event
+        └─ it should set {pendingGovernance} to {_newGovernance}
