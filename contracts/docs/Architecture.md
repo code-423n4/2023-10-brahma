@@ -10,7 +10,7 @@ To make a transaction via `ConsoleAccount`, owner calls `execTransaction()` func
 
 Note: Step 1 and 3 are only executed if `SafeModeratorOverridable` is enabled as guard on `ConsoleAccount`, which may not be enabled in the case where `ConsoleAccount` has not setup policy & guard as they are optional.
 
-![image](https://github.com/code-423n4/2023-10-brahma/contracts/docs/images/console%20account%20execTransaction.png)
+![image](./images/console%20account%20execTransaction.png)
 
 ## Console guard removal transaction
 
@@ -22,11 +22,11 @@ Transaction to reset guard. The `execTransaction()` executes in 3 steps
 
 Note: Step 1 and 3 are only executed if `SafeModeratorOverridable` is enabled as guard on `ConsoleAccount`, which may not be enabled in the case where `ConsoleAccount` has not setup policy & guard as they are optional.
 
-![image](https://github.com/code-423n4/2023-10-brahma/contracts/docs/images/console-guard-removal.png)
+![image](./images/console-guard-removal.png)
 
 ## SubAccount execTransaction by operator
 
-![image](https://github.com/code-423n4/2023-10-brahma/contracts/docs/images/sub-account%20execTransaction%20by%20operators.png)
+![image](./images/sub-account%20execTransaction%20by%20operators.png)
 To make a transaction via `SubAccount`, owner calls `execTransaction()` function. The `execTransaction()` executes in 3 steps
 
 1. `execTransaction()` calls `checkTransaction()` function on `SafeModerator`. The `SafeModerator` validates checks like `policyHash` and `Trusted Validator Signature` using `TransactionValidator` and `PolicyValidator`.
@@ -37,7 +37,7 @@ To make a transaction via `SubAccount`, owner calls `execTransaction()` function
 
 For `ConsoleAccount` to make a transaction via `SubAccount`, `consoleAccount` calls `execTransactionFromModuleReturnData()` function on `SubAccount`. The `execTransactionFromModuleReturnData()` function executes the desired calldata by calling `execute()` function and returns `returnData` to `ConsoleAccount`.
 
-![image](https://github.com/code-423n4/2023-10-brahma/contracts/docs/images/Sub-account%20execution%20flow%20via%20console%20account.png)
+![image](./images/Sub-account%20execution%20flow%20via%20console%20account.png)
 
 ## SubAccount execution via executor plugin
 
@@ -47,4 +47,4 @@ For `Executor` to make a transaction on `SubAccount` via `ExecutorPlugin`. Execu
 2. `ExecutorPlugin` executes transaction on `SubAccount` as module.
 3. After execution of module transaction, the `ExecutorPlugin` calls `validatePostExecutorTransaction()` function on `TransactionValidator`. to check that `SafeModerator` hasn't been removed as guard on `SubAccount` and `ConsoleAccount` hasn't been removed as module on `SubAccount`.
 
-![image](https://github.com/code-423n4/2023-10-brahma/contracts/docs/images/Sub-account%20execution%20flow%20via%20executor%20plugin.png)
+![image](./images/Sub-account%20execution%20flow%20via%20executor%20plugin.png)
