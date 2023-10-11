@@ -1,0 +1,9 @@
+RegisterExecutor.t.sol::registerExecutor(address _subAccount, address _executor)
+├─ When {msg.sender} is not owner wallet of {_subAccount}
+│   └─ It should revert with {NotOwnerWallet()}
+└─ When {msg.sender} is owner wallet of {_subAccount}
+    ├─ When {_executor} is already registered for {_subAccount}
+    │   └─ It should revert with {AlreadyExists()}
+    └─ When {_executor} is not registered for {_subAccount}
+        └─ {_executor} should be added to {subAccountToExecutors} for {_subAccount}
+        └─ It should emit RegisterExecutor(_subAccount, _owner, _executor) event

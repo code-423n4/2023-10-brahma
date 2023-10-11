@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES2016",
+        "lib": ["es2015"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "alwaysStrict": false
+    },
+    "exclude": ["node_modules"]
+}

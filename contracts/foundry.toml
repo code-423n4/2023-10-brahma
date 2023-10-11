@@ -1,0 +1,16 @@
+[profile.default]
+ffi = true
+optimizer = true
+optimizer_runs = 20_000
+solc = "0.8.19"
+
+[rpc_endpoints]
+eth = "https://eth-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
+op = "https://opt-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
+base = "https://base-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
+avax_c = "https://avalanche-mainnet.infura.io/v3/${INFURA_API_KEY}"
+polygon = "https://polygon-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
+arbitrum = "https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
+zkevm = "https://polygonzkevm-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}"
+bsc = "https://binance.llamarpc.com"
+fantom = "https://ftm.getblock.io/${GETBLOCK_API_KEY}/mainnet"

@@ -1,0 +1,9 @@
+RegisterSubAccount.t.sol::registerSubAccount(address _wallet, address _subAccount)
+├─ When {msg.sender} is not {SafeDeployer}
+│   └─ It should revert with {InvalidSender()}
+└─ When {msg.sender} is {SafeDeployer}
+    ├─ When {_subAccount} is already registered in subAccountToWallet
+    │   └─ It should revert with {AlreadyRegistered()}
+    └─ When {_subAccount} is already registered in subAccountToWallet
+        ├─ It should register {_subAccount} as subAccount for {_wallet} in subAccountToWallet map and walletToSubAccountList[_wallet] list
+        └─ It should emit {RegisterSubAccount(_wallet, _subAccount)}

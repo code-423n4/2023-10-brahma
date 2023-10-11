@@ -1,0 +1,17 @@
+SetRegistry.t.sol::setRegistry(bytes32 _key, address _registry)
+├─ When the caller is not governance address
+│   └─ It shoud revert with {NotGovernance(sender)}
+└─ When the caller is governance address
+    └─ _ensureAddressProvider(_registryAddress)
+        ├─ When _registry already registered i.e. registries[_key] is not equal to ADDRESS_ZERO (address(0))
+        │   └─ It should revert with {RegistryAlreadyExists}
+        └─ When _registry not already registered i.e. registries[_key] is equal to ADDRESS_ZERO (address(0))
+            ├─ It should set _registry in registries
+            └─ It should emit {RegistryInitialised(_registry, _key)}
+
+
+_ensureAddressProvider(_registryAddress)
+        ├─ When {addressProviderTarget} on _registryAddress is not equal to addressProvider (address(this))
+        │   └─ It should revert with {AddressProviderUnsupported()}
+        └─ When {addressProviderTarget} on _registryAddress is equal to addressProvider (address(this))
+            └─ return

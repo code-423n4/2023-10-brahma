@@ -1,0 +1,9 @@
+RegisterWallet.t.sol::registerWallet()
+├─ When {msg.sender} is already registered
+│   └─ It should revert with {AlreadyRegistered()}
+└─ When {msg.sender} is not registered
+    ├─ When {msg.sender} is a sub account
+    │   └─ It should revert with {IsSubAccount()}
+    └─ When {msg.sender} is not a sub account
+        ├─ It should register {msg.sender} as wallet in {isWallet}
+        └─ It should emit {RegisterWallet(msg.sender)}

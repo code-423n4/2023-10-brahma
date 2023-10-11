@@ -1,0 +1,18 @@
+UpdatePolicy.t.sol::updatePolicy(address account, bytes32 policyCommit)
+├─ When {policyCommit} is bytes32(0)
+│   └─ It should revert with {PolicyCommitInvalid()}
+└─ When {policyCommit} is not bytes32(0)
+    ├─ When {currentCommit} is bytes32(0) AND {msg.sender} is SafeDeployer 
+    │   └─ _updatePolicy(account, policyCommit) 
+    └─ When {currentCommit} is not bytes32(0) OR {msg.sender} is or SafeDeployer 
+        ├─ When {msg.sender} is owner wallet for {account}
+        │   └─ _updatePolicy(account, policyCommit) 
+        ├─ When {msg.sender} is account itself AND {msg.sender} is registered wallet i.e. owner wallet is setting policy for itself
+        │   └─ _updatePolicy(account, policyCommit) 
+        └─ When (msg.sender is not account OR {msg.sender} is not registered wallet) OR msg.sender isn't owner wallet for account
+            └─ It should revert with UnauthorizedPolicyUpdate()
+
+
+_updatePolicy(address account, bytes32 policyCommit)
+    ├─ It should set {commitment} for {account} as {policyCommit}
+    └─ It should emit {UpdatedPolicyCommit(account,newPolicyCommit,oldPolicyCommit)} event

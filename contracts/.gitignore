@@ -1,0 +1,28 @@
+# Compilation
+cache/
+out/
+cache_hardhat/
+broadcast/
+artifacts/
+typechain-types/
+.compiler-configs/
+
+# Deps
+node_modules/
+
+# Forge
+.gas-snapshot
+
+# Slither
+slither.md
+slither.sarif
+report/
+lcov.info
+
+# Deployments
+verification_json/
+flatten/
+
+# Secrets
+.env
+.DS_Store

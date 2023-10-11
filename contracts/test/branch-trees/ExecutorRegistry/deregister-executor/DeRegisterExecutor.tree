@@ -1,0 +1,9 @@
+DeRegisterExecutor.t.sol::deRegisterExecutor(address _subAccount, address _executor)
+├─ When {msg.sender} is not owner wallet of {_subAccount}
+│   └─ It should revert with {NotOwnerWallet()}
+└─ When {msg.sender} is owner wallet of {_subAccount}
+    ├─ When {_executor} is not registered for {_subAccount}
+    │   └─ It should revert with {DoesNotExist()}
+    └─ When {_executor} is registered for {_subAccount}
+        └─ {_executor} should be removed from {subAccountToExecutors} for {_subAccount}
+        └─ It should emit DeRegisterExecutor(_subAccount, _owner, _executor) event
