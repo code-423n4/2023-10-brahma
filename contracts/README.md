@@ -1,4 +1,4 @@
-# <h1 align="center"> ![Brahma Console](./docs/images/banner.png) </h1>
+# <h1 align="center"> ![Brahma Console](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/docs/images/banner.png) </h1>
 
 ![Github Actions Status](https://github.com/brahma-fi/console-core-v2/actions/workflows/ci.yml/badge.svg)
 
@@ -36,11 +36,11 @@ forge build
 
 ## Structure
 
-[src](./src): contains all the source code of contracts used for console. <br>
-[docs](./docs): contains all the documentation related architecture flow of contracts. <br>
-[test](./test): contains unit and integration tests<br>
-[script](./script/): contains deployment scripts<br>
-[offchain](./offchain/): contains latest deployment records <br>
+[src](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/src): contains all the source code of contracts used for console. <br>
+[docs](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/docs): contains all the documentation related architecture flow of contracts. <br>
+[test](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/test): contains unit and integration tests<br>
+[script](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/script): contains deployment scripts<br>
+[offchain](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/offchain): contains latest deployment records <br>
 
 ## Running Tests and Coverage Reports
 
