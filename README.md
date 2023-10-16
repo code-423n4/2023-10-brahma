@@ -46,8 +46,8 @@ Users also have access to SafeSub-accounts that reduce their risk from the proto
 # Scope
 
 
-| Contract | SLOC | Purpose | Libraries used |
-| ----------- | ----------- | ----------- | ----------- |
+| Contract    | SLOC        | Purpose     | Libraries used |
+| ----------- | ----------- | ----------- | -------------- |
 | [src/libraries/TypeHashHelper.sol](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/src/libraries/TypeHashHelper.sol) | 45 | The `TypeHashHelper` library serves as a helper library, offering the functions required for building struct hashes for generating EIP712 digests that are required for signature validations. | N/A |
 | [src/libraries/SafeHelper.sol](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/src/libraries/SafeHelper.sol) | 83 | The `SafeHelper` library serves as a helper library, offering essential functions for a range of interactions with Safe. These include executing transactions, generating calldata, obtaining necessary storage slots, parsing data etc. | N/A |
 | [src/core/TransactionValidator.sol](https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/src/core/TransactionValidator.sol) | 89 | The `TransactionValidator` contract provides hooks for validation of the various kinds of transactions on Console and SubAccount. These hooks include validating policy/state compliance before and after transactions for both Console and SubAccount via. the guards (`SafeModerator` & `SafeModeratorOverridable`), and also for module execution on SubAccount via. `ExecutorPlugin`. | N/A |
