@@ -1,0 +1,2042 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-Q4-2023 / brahma-oct13
+==============================================================
+
+[10/11/2023 16:49] knownfactc4_29311 (pinned)
+👋 Hello and welcome to the audit channel for the $31,250 USDC **Brahma** audit!
+
+📆 Audit opens 10/13/2023 20:00 (20:00 UTC) and runs through 10/20/2023 20:00 (20:00 UTC) (7 days).
+
+Please give a warm welcome to the Brahma team, particularly @0xAd1, @0xJoker, @Pradeep, and @Keshav who will be available for questions either here in the channel or via DM in the IST India Standard Time timezone.
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/contests/2023-10-brahma
+
+{Embed}
+https://code4rena.com/contests/2023-10-brahma
+Brahma | Code4rena
+Brahma Console is a custody and DeFi execution environment.
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/c4-og-banner-20E67.png
+
+{Reactions}
+👋 (17) 🔥 (2) siren (4) consolecalling 
+
+[10/11/2023 16:55] itsmetechjay
+Pinned a message.
+
+
+[10/12/2023 16:25] mike_bello90
+Does anyone know which part of Brahma will be audited? console, vaults or Karma? 🤔
+
+
+[10/12/2023 16:31] kartoonjoy
+Console: https://code4rena.com/contests/2023-10-brahma#top
+
+{Reactions}
+🫡 (7) 
+
+[10/13/2023 20:01] dimulski
+When lambo?
+
+{Reactions}
+🔥 (2) 
+
+[10/13/2023 20:01] rouhsamad
+now sir!
+
+
+[10/13/2023 20:06] pascal9476
+Already found a high
+
+{Reactions}
+🔥 (4) 😂 (5) 
+
+[10/13/2023 20:11] nmirchev8
+What is it? 🤔
+
+
+[10/13/2023 20:14] pascal9476
+😂😂
+
+
+[10/13/2023 20:14] pascal9476
+All jokes 
+Let’s get serious 🧐
+
+{Reactions}
+😎 
+
+[10/13/2023 20:15] thesaleem_
+🤣🤣🤣
+
+
+[10/13/2023 20:18] dimulski
+so the whole codebase has been already audited?
+
+{Reactions}
+👍 
+
+[10/13/2023 20:23] nmirchev8
+How do we run tests?
+
+
+[10/13/2023 20:27] _mundhrakeshav
+You’ll have to create a .env file. And have a look at makefile for all the commands. `make test_all` should run all the tests.
+
+{Reactions}
+Chad (9) 
+
+[10/13/2023 20:31] nmirchev8
+Thanks!
+
+
+[10/13/2023 22:12] bowtiedvirus
+Any way we can get the version of the code as of the last audit fix? Would like to do a diff to see what's changed since then.
+
+
+[10/14/2023 00:11] irving6969
+https://tenor.com/view/lfg-lets-goo-gif-25423985
+
+{Embed}
+https://tenor.com/view/lfg-lets-goo-gif-25423985
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/lfg-lets-5E020.png
+
+
+[10/14/2023 01:08] giraffe0x
+how to run tests on a specific contract/test ?
+
+
+[10/14/2023 01:25] _mundhrakeshav
+`make test_quick P=<contract name>`
+`make test_func P=<func name>`
+
+{Reactions}
+🙏 (2) 
+
+[10/14/2023 03:32] 0xstalin
+@Keshav Sent you a FR request and a DM Sir 🫡
+
+
+[10/14/2023 03:41] coffiasd
+:thankyou:
+
+
+[10/14/2023 04:30] _mundhrakeshav
+Accepted ser.
+
+
+[10/14/2023 04:52] 0x11singh99
+is the current codbase in c4 contest is audited  or given audits is of another code which not in scope ? 
+If yes then findings has been fixed or not  ? 
+@Keshav
+
+
+[10/14/2023 05:02] fktworld
+The path imported by vscode is not a relative path. How to solve this problem? Thank you everyone!🙂
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/73c29465f45b5724-B024C.png
+
+
+[10/14/2023 05:06] mgf15
+i got some error run forge test
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/Screenshot_2023-10-14_07-05-50-95B4B.png
+
+
+[10/14/2023 05:07] 0xstalin
+I ran the tests using `make test_all` command, and it worked fine
+
+
+[10/14/2023 05:10] mgf15
+do i need ```
+MAINNET_RPC=
+MAINNET_BLOCK=
+ALCHEMY_API_KEY=```
+
+
+[10/14/2023 05:10] mgf15
+?
+
+
+[10/14/2023 05:11] _mundhrakeshav
+https://discord.com/channels/810916927919620096/1161381699494621184/1162486846190788779
+
+{Reactions}
+👍 
+
+[10/14/2023 05:12] mgf15
+thanks
+
+
+[10/14/2023 05:12] _mundhrakeshav
+`remappings.txt` file should be there to take care of it
+
+
+[10/14/2023 05:17] rvierdiiev
+@Keshav pls, accept friend request
+
+{Reactions}
+👍🏼 
+
+[10/14/2023 05:18] mgf15
+all works fine 👍
+
+{Reactions}
+Poghype 
+
+[10/14/2023 06:19] aslanbekaibimov
+has anyone encountered this issue?
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-42DBD.png
+
+
+[10/14/2023 06:28] loserdavictor
+no
+
+
+[10/14/2023 06:28] pradeepselva
+Maybe your env isn't setup correctly. Can you send a screenshot after running the test with max verbosity (-vvvv)?
+
+
+[10/14/2023 06:29] loserdavictor
+i just added alchemy api key and it worked
+
+{Reactions}
+👍 (2) 
+
+[10/14/2023 06:29] aslanbekaibimov
+i did the same and it did not (:
+
+
+[10/14/2023 06:30] aslanbekaibimov
+the issue is somehow in the MAINNET_RPC, figured it out by removing it
+
+
+[10/14/2023 06:30] loserdavictor
+i didnt touch that thing in .env
+
+
+[10/14/2023 06:31] aslanbekaibimov
+so you only changed ALCHEMY_API_KEY?
+
+{Reactions}
+✅ 
+
+[10/14/2023 06:32] aslanbekaibimov
+maybe its not then
+
+
+[10/14/2023 06:32] aslanbekaibimov
+cant do -vvvv with make
+
+
+[10/14/2023 06:36] 0xfave
+no all the test are running
+
+make sure you change everything in the .env
+
+
+[10/14/2023 06:38] 0xfave
+yes
+same here
+
+
+[10/14/2023 06:39] _mundhrakeshav
+You can change the command in makefile itself
+
+
+[10/14/2023 06:39] loserdavictor
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-68CA4.png
+
+
+[10/14/2023 06:39] 0xfave
+If you want to use -vvvv edit it in the makefile because it has been hardcoded there
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-6F0E0.png
+
+{Reactions}
+👌🏻 
+
+[10/14/2023 06:40] _mundhrakeshav
+Or use `test_func` it’s has 4 verbosity set
+
+
+[10/14/2023 06:40] 0xfave
+go to etherscan and get the latest block
+
+go to metamask wallet and get the rpc
+
+
+[10/14/2023 06:40] 0xfave
+wow
+thanks man seen
+
+
+[10/14/2023 06:42] loserdavictor
+**206 passed**
+the reason for opening terminal was bc i had to take the ss and it showed more text of the tests 
+
+but if i open it in small size then terminal of code goes up and everything is visible
+
+
+[10/14/2023 06:43] 0xfave
+ohh okay 
+
+but you are still going to need them when you call `make test_func`
+
+{Reactions}
+👍 
+
+[10/14/2023 06:43] 0xfave
+I am having an error here
+````
+error: a value is required for '--match-test <REGEX>' but none was supplied
+
+For more information, try '--help'.
+make: *** [makefile:53: test_func] Error 2
+```
+
+
+[10/14/2023 06:44] _mundhrakeshav
+You didn’t pass the test name it seems to test_func
+
+
+[10/14/2023 06:44] pradeepselva
+Use `make test_func P=<function name>`
+
+
+[10/14/2023 06:44] loserdavictor
+you need to write the function name after --match-test
+
+
+[10/14/2023 06:44] _mundhrakeshav
+https://discord.com/channels/810916927919620096/1161381699494621184/1162561710427738113
+
+
+[10/14/2023 06:46] slavcheww
+I have this error
+```
+make: *** No rule to make target 'test_all'.  Stop.
+```
+
+
+[10/14/2023 06:47] pradeepselva
+Did you cd into contracts folder¿
+
+
+[10/14/2023 06:47] slavcheww
+yeah of course
+
+
+[10/14/2023 06:48] pradeepselva
+make commands should be run from root
+
+
+[10/14/2023 06:48] pradeepselva
+Makefile is in the root
+
+
+[10/14/2023 06:49] pradeepselva
+Can you check if test_all is defined on ur makefile? @Slavcheww
+
+
+[10/14/2023 06:49] slavcheww
+Restart Vs, and its running now
+
+
+[10/14/2023 06:50] 0xfave
+thanks man
+
+
+[10/14/2023 06:51] 0xfave
+```
+ make test_quick P=AddressProvider_ServiceTest
+[⠔] Compiling...
+No files changed, compilation skipped
+Error: 
+Could not instantiate forked environment with fork url: https://mainnet.infura.io/v3/
+
+Context:
+- Error #0: Failed to get gas price
+- Error #1: Deserialization Error: expected value at line 1 column 1. Response: project id required in the url
+
+make: *** [makefile:42: test_quick] Error 1
+```
+
+Is this because of rpc I am using?
+
+
+[10/14/2023 06:51] _mundhrakeshav
+Yes. Infura ApiKey seems to be missing from your rpc
+
+
+[10/14/2023 06:51] loserdavictor
+you need to sign up for the url of api
+
+
+[10/14/2023 06:51] 0xfave
+ohh ok
+
+
+[10/14/2023 06:52] 0xfave
+thanks
+
+
+[10/14/2023 07:51] aslanbekaibimov
+most of the errors look like that: one of the two sides of assertions is empty (i suppose)
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-A2D2A.png
+
+
+[10/14/2023 07:52] aslanbekaibimov
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-A438B.png
+
+
+[10/14/2023 08:07] _mundhrakeshav
+Do you have env setup correctly?
+
+
+[10/14/2023 08:08] aslanbekaibimov
+i think ive tried every possible correct/incorrect setup at this point 🙂
+
+
+[10/14/2023 08:10] _mundhrakeshav
+Can you try 
+https://github.com/code-423n4/2023-10-brahma/#building-and-running these steps again. It should work
+
+{Embed}
+https://github.com/code-423n4/2023-10-brahma/
+GitHub - code-423n4/2023-10-brahma
+Contribute to code-423n4/2023-10-brahma development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/631566f9-b0c6-4908-b492-3dcacd5d1a8d-44D0F
+
+
+[10/14/2023 08:11] _mundhrakeshav
+You’d have to install npm packages as well
+
+
+[10/14/2023 08:16] aslanbekaibimov
+reinstalled 2 times - the issue is exactly the same
+
+
+[10/14/2023 08:26] stealthyzzzz
+Great documentation, especially the flow charts :chefskiss:
+
+{Reactions}
+👍 (4) Love 
+
+[10/14/2023 09:27] mrxstrange
+how to solve this?
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-AE099.png
+
+
+[10/14/2023 09:28] nisedo
+How are `Operator` defined? Is it offchain?
+
+Are `Operator` and `Trusted Validator` the same?
+
+
+[10/14/2023 09:31] mrxstrange
+forge build also same error
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-1CF31.png
+
+
+[10/14/2023 09:37] mrxstrange
+offchain
+
+
+[10/14/2023 10:04] _mundhrakeshav
+So seems like maybe your Internet Provider isn’t allowing praw.githubusercontent….
+Try w a vpn Happens w me
+
+{Reactions}
+🙏 
+
+[10/14/2023 10:08] mrxstrange
+re-installed npm now problem solved.
+
+
+[10/14/2023 10:09] mrxstrange
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-57CC8.png
+
+
+[10/14/2023 10:11] _mundhrakeshav
+Operators are “owners of sub account” their functionality is validated using a guard/transaction validator / delegated owners.
+
+Trusted Validator is a trusted address in the system that allows transaction by signing them and the signature gets verified in policy validator contract
+
+
+[10/14/2023 12:21] josieg_74479
+First couple files, I've read are very well commented. And the doc's are clear. Makes for easy reading. Thank you devs on this project....
+
+{Reactions}
+🫡 (6) bullish (4) immunefistandard (2) 
+
+[10/14/2023 12:51] borongod
+😂 its a hard one, try to find something missed by ackee
+
+
+[10/14/2023 13:31] t1moh
+Is ConsoleAccount just GnosisSafe wallet?
+
+
+[10/14/2023 13:40] mahdi9606
+@0xJoker Please checl dm
+
+
+[10/14/2023 13:53] m_rassska
+@Keshav, pls, accept the fr.
+
+
+[10/14/2023 13:57] _mundhrakeshav
+Yes
+
+
+[10/14/2023 13:58] m_rassska
+GnosisSafeProxy to be exact, which delegates the calls into GnosisSafe, no?
+
+
+[10/14/2023 13:58] t1moh
+True
+
+
+[10/14/2023 13:59] 0xjoker
+Its just plain vanilla gnosis safe version 1.3.0
+
+
+[10/14/2023 14:29] aslanbekaibimov
+The issue was in `yarn`. Installing dependencies via `npm i` solves the issue. Thanks to everyone who tried to help 🙂
+
+{Reactions}
+👍 
+
+[10/14/2023 15:23] t1moh
+who is TrustedValidator?
+
+
+[10/14/2023 15:24] xariextz
+Any explanations about the interaction with SafeEnabler? Does each Safe deploy a SageEnabler when initializing? I am a bit loss in this
+
+
+[10/14/2023 15:34] _mundhrakeshav
+https://discord.com/channels/810916927919620096/1161381699494621184/1162694225192820796
+
+
+[10/14/2023 15:38] _mundhrakeshav
+Safe enabler is just used to set a guard and fallback handler on console by making a delegate call to it.
+
+
+[10/14/2023 15:46] xariextz
+Is there 1 SafeEnabler for each Console?
+
+
+[10/14/2023 15:46] _mundhrakeshav
+No. 1 SafeEnabler for all
+
+
+[10/14/2023 15:49] tx.origin
+sponsor discord role should have prio over wardens role 
+easier to read this chat when you immediately see the sponsors answers
+
+{Reactions}
+👆 (7) 
+
+[10/14/2023 16:21] Message Wolf#0225 (pinned)
+**Automated Findings / Publicly Known Issues**
+
+Automated findings output for the audit can be found [here](https://gist.github.com/code423n4/f2cd7bf607b966c36c4ddad4959657c9).
+
+*Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
+
+
+[10/14/2023 16:35] liveactionllamac4
+Pinned a message.
+
+
+[10/14/2023 17:58] ladboy233
+@Keshav friend request sent
+
+
+[10/14/2023 17:59] crc32#4377
+There is not enough information about the previous audit, any commit from previous audit ?? @Keshav @0xJoker
+
+{Reactions}
+👍 (4) 
+
+[10/14/2023 18:00] crc32#4377
+Need to know something has changed since previous audit or not
+
+
+[10/14/2023 18:47] shahen.0000
+@Keshav dm sent
+
+
+[10/14/2023 19:12] mrbowtiedoriole
+Can you explain a bit more about what the policy commits are used for? Is it mainly just an offchain mechanism so you can determine if the transaction was validated and signed by one policy versus another?
+
+
+[10/14/2023 21:37] pxng0lin
+ok this is doing my head in, I git cloned the repo, however every contract has an error with imports due to the fact the the files are all in a directory called contract, which is not part of the imports in the contracts? Is this the same for everyone else?
+
+
+[10/14/2023 22:05] maroutis
+cd contract before running forge build
+
+
+[10/14/2023 22:34] pxng0lin
+bloody nora,THANKS!
+
+
+[10/14/2023 22:34] pxng0lin
+I should learn to read the bloody instructions, i missed that completely on the c4 site!
+
+{Reactions}
+😅 
+
+[10/15/2023 00:42] sandnallani
+❓ Ackee:: Console V2 audit found an issue related to being unable to disable the guard, which was fixed. Were there any new code blocks added since that audit?
+
+
+[10/15/2023 01:52] shahen.0000
+Im looking for this as well, did u got the answer?
+
+
+[10/15/2023 02:00] _mundhrakeshav
+You can think of Policies as 32 byte offchain proof, allowing certain onchain actions.
+
+Say if you(console account) wanna allow one of your sub account to be able to make swap transaction to uniswap, you can register corresponding policy on policy registry. Whenever you make a tx the trusted validator would sign that policy with tx offchain and the signature gets verified in PolicyValidator.
+
+{Reactions}
+👍🏾 (5) 
+
+[10/15/2023 02:55] coffiasd
+@Keshav  friend request send
+
+
+[10/15/2023 06:04] _karanel
+@Keshav can you share the previous audit's code for us to run a diff?
+
+
+[10/15/2023 06:15] irving6969
+`function _onlyDelegateCall() private view {
+        if (address(this) == _self) revert OnlyDelegateCall();
+    }` how does this work?
+
+
+[10/15/2023 06:46] 0x11singh99
+```
+Failing tests:
+Encountered 1 failing test in test/branch-trees/ConsoleFallbackHandler/is-valid-signature/IsValidSignature.t.sol:ConsoleFallbackHandler_IsValidSignature
+[FAIL. Reason: Failed to execute command: program not found] testIsValidSignature_ECDSA_FE() (gas: 15638)
+
+Encountered 4 failing tests in test/branch-trees/TransactionValidator/validate-pre-tx-overridable/ValidatePreTxOverridable.t.sol:TransactionValidator_validatePreTransactionOverridableTest
+[FAIL. Reason: Failed to execute command: program not found] testValidatePreTransactionOverridable_ShouldNotRevertWhenFallbackHandlerRemoved() (gas: 49393)
+[FAIL. Reason: Failed to execute command: program not found] testValidatePreTransactionOverridable_ShouldNotRevertWhenGuardRemoved() (gas: 49372)
+[FAIL. Reason: Error != expected error: Failed to execute command: program not found != 0x30bccdc1] testValidatePreTransactionOverridable_ShouldRevertInvalidTxnUnAuthorized_PolicyValidatorFail() (gas: 69934)
+[FAIL. Reason: Failed to execute command: program not found] testvalidatePreTransactionOverridable() (gas: 53218)
+
+Encountered 2 failing tests in test/branch-trees/TransactionValidator/validate-pre-tx/ValidatePreTx.t.sol:TransactionValidator_validatePreTransactionTest
+[FAIL. Reason: Failed to execute command: program not found] testvalidatePreTransaction() (gas: 53263)
+[FAIL. Reason: Error != expected error: Failed to execute command: program not found != 0x30bccdc1] testvalidatePreTransaction_ShouldRevertTxnUnAuthorized_PolicyValidatorFail() (gas: 69934)
+
+Encountered a total of 7 failing tests, 199 tests succeeded
+make: *** [makefile:9: test_all] Error 1
+
+```
+199 are passing only these above 7 are failing not able to figure out why ?  @Keshav
+
+
+[10/15/2023 06:47] aslanbekaibimov
+@0x11singh99
+
+
+[10/15/2023 06:49] 0x11singh99
+I did `npm i`
+
+
+[10/15/2023 06:50] aslanbekaibimov
+maybe a version issue 
+
+mine is
+npm 9.6.7
+node 18.17.1
+
+
+[10/15/2023 06:58] rvierdiiev
+@Keshav 
+why do you set console as module for subconsole using SafeEnabler.enableModule, but not ModuleManager.enableModule?
+as they do exactly the same
+the same is for setting guard
+
+
+[10/15/2023 06:59] _mundhrakeshav
+_self is address of SafeEnabler. If we make a delegate call then address(this) comes from context of safe. If we make a direct call address(this) will be address of SafeEnabler.
+
+{Reactions}
+hi5 (4) 
+
+[10/15/2023 07:12] irving6969
+only safe_deployer can register subaccounts?
+
+
+[10/15/2023 07:24] 0xswahili
+```
+anvil
+source .env
+forge script script/deploy_DeployProtocol.s.sol:DeployProtocol --fork-url http://localhost:8545 --broadcast -vvvv
+[⠑] Compiling...
+No files changed, compilation skipped
+Error: 
+Failed to deploy script:
+Execution reverted: EvmError: Revert (gas: 646717)
+
+```
+Kindly help on this...
+
+
+[10/15/2023 08:28] xariextz
+I am also having trouble with understanding the SafeEnabler. In a test we can mind: assertTrue(IGnosisSafe(_subAccount).isModuleEnabled(address(this))). Which means that each subaccount can enable a module or not, but I don't understand how it is different for every subaccount if the SAfeEnabler contract is only 1 and has only 1 mapping
+
+
+[10/15/2023 08:40] 0x11singh99
+@Keshav   how to run any single test ?  ` forge test --mt <test-name> `  not working
+
+
+[10/15/2023 08:46] 0xsl1
+this worked for me: `forge test --fork-url eth -vvv --ffi --match-test`
+
+
+[10/15/2023 08:51] 0x11singh99
+Thanks  It worked. 
+One doubt how just writing eth is working here instead of writing whole url  ?
+
+
+[10/15/2023 08:52] 0xsl1
+don't know i just copied this command from a makefile and replaced `no-match-path` with `--match-test`
+
+
+[10/15/2023 08:53] 0x11singh99
+Great 👍
+
+
+[10/15/2023 08:53] 0xsl1
+oh it's actually in foundry.toml, eth is replaced with an url
+
+
+[10/15/2023 08:53] 0x11singh99
+ohh
+
+
+[10/15/2023 08:59] _mundhrakeshav
+The `ModuleManager.enableModule` calls should be made through the safe itself because of ` authorised ` modifier.
+We wanted both setGuard and enableModule to happen in same deployment tx. 
+ We use SafeEnabler because we want initializer to be part of nonce in createProxyWithNonce function so frontrunned deployments can be recovered by trying deployment using different nonce.
+
+{Reactions}
+hi5 (3) 
+
+[10/15/2023 09:01] _mundhrakeshav
+Yes
+
+{Reactions}
+hi5 
+
+[10/15/2023 09:07] _mundhrakeshav
+SafeEnabler implements logic similar to ModuleManager and GuardManager. 
+We make a delegate call to SafeEnabler ie the state changes are in context of safe itself and not in Enabler.
+
+{Reactions}
+👍 
+
+[10/15/2023 09:07] _mundhrakeshav
+`make test_func P=<test_name>`
+
+
+[10/15/2023 09:09] 0xsl1
+can executorPlugin be used on console account or it's only for a subAccount?
+
+
+[10/15/2023 09:10] _mundhrakeshav
+It is intended to be used only for subAcc, tho it can be used w any safe being a module.
+
+{Reactions}
+10_10 
+
+[10/15/2023 09:17] 0xswahili
+@Keshav  Kindly help on the localDeploy error. My .env file
+
+```
+CONSOLE_MAINNET_PRIVATE_KEY=0x2a871d0798f97d79848a013d4936a73bf4cc922c825d33c1cf7073dff6d409c6
+```
+
+
+[10/15/2023 09:18] xariextz
+If that is one of your private keys you should remove that message😅
+
+
+[10/15/2023 09:19] 0xswahili
+No. That's from one of the default accounts...
+
+
+[10/15/2023 09:20] xariextz
+Great, just wanted to make sure😅 👍
+
+
+[10/15/2023 09:23] _mundhrakeshav
+You can call `ConsoleFactory.deployConsole();`  script to deploy
+
+
+[10/15/2023 09:30] 0xswahili
+```
+forge script script/utils/ConsoleFactory.s.sol:ConsoleFactory --fork-url http://localhost:8545 --broadcast -vvvv --sig  "deployProtocol()" 0xa0Ee7A142d267C1f36714E4a8F75612F20a79720 true
+
+Error: Contract constructor should have no arguments. Add those arguments to  `run(...)` instead, and call it with `--sig run(...)`.
+```
+
+
+[10/15/2023 09:37] _mundhrakeshav
+constructor params for ConsoleFactory is only a string
+
+
+[10/15/2023 10:34] xariextz
+I don't understand which is the role of ConsoleFallbackHandler.sol
+
+
+[10/15/2023 11:44] franklin4121
+What exactly does policy commits do or used for ?
+
+
+[10/15/2023 11:50] t1moh
+Trusted Validator must use it to sign transaction data. It is used in PolicyValidator
+
+{Reactions}
+✅ 
+
+[10/15/2023 11:51] franklin4121
+okay thanks got it
+
+
+[10/15/2023 12:44] 0xlamide#0986
+Does anyone have a link to what really  QA is and how to go about it?
+
+
+[10/15/2023 13:16] pascal9476
+Please what are safe deployers
+
+
+[10/15/2023 13:17] pascal9476
+And authorized addresses
+
+
+[10/15/2023 13:21] pascal9476
+@Keshav or anybody else that knows
+
+
+[10/15/2023 13:22] tx.origin
+https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/docs/Core.md
+this part of the docs explains it pretty well
+
+{Embed}
+https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/docs/Core.md
+2023-10-brahma/contracts/docs/Core.md at main · code-423n4/2023-10-...
+Contribute to code-423n4/2023-10-brahma development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/631566f9-b0c6-4908-b492-3dcacd5d1a8d-44D0F
+
+
+[10/15/2023 13:45] windowhan001
+@Keshav Hello keshav, can i send dm ?
+
+{Reactions}
+👍 
+
+[10/15/2023 13:45] windowhan001
+i have a one question
+
+
+[10/15/2023 13:59] pascal9476
+Didn’t quite explain authorized addresses well
+
+
+[10/15/2023 14:04] borongod
+Would all users share the same registry contracts?
+
+
+[10/15/2023 14:19] noro9954
+@Keshav, can you accept friend request, i have sent a dm
+
+{Reactions}
+👍 
+
+[10/15/2023 14:29] ivanfitro
+anyone knows why all the imports of the contracts are not found?
+
+
+[10/15/2023 14:29] xariextz
+Did you cd?
+
+
+[10/15/2023 14:29] xariextz
+I think there was more people with same issue
+
+
+[10/15/2023 14:30] ivanfitro
+cd to contracts?
+
+
+[10/15/2023 14:30] xariextz
+Yes
+
+
+[10/15/2023 14:31] ivanfitro
+yes, but all the imports are failing
+
+
+[10/15/2023 14:31] xariextz
+Reread the msgs, maybe yuou find something useful, a lot of people were having problems with running the tests
+
+
+[10/15/2023 14:32] ivanfitro
+perfect, thank you so much!
+
+{Reactions}
+👍 
+
+[10/15/2023 14:32] coffiasd
+_signatures = abi.encodePacked(safeSignature, validatorSignature, validatorSignatureLength, expiryEpoch)   does this content packed in safe contract ?
+
+
+[10/15/2023 14:33] coffiasd
+@Keshav
+
+
+[10/15/2023 14:40] ivanfitro
+you need to use make test_all and configure the .env for work
+
+
+[10/15/2023 14:56] ivanfitro
+how can execute onyl one test using make test_all?
+
+
+[10/15/2023 15:29] kawaicho
+is this part of the code has been audited before?
+
+
+[10/15/2023 15:44] xariextz
+https://discord.com/channels/810916927919620096/1161381699494621184/1163033667455696976
+
+{Reactions}
+👍 (2) 
+
+[10/15/2023 16:10] xariextz
+Yes, you can readi it in the documentation of the contest
+
+
+[10/15/2023 18:37] sandnallani
+For anyone interested in an on-ramp (with video links) to what Console and Safe are about. I compiled this tweet. https://x.com/sandnallani/status/1713604539528729019?s=46&t=YnIGe-vbrciDcUL2c_Xi5A
+
+{Reactions}
+🔥 (9) 
+
+[10/15/2023 19:28] hisoul22
+thanks
+
+
+[10/15/2023 20:54] sama4
+What's the best template to report a vulnerablity?
+
+
+[10/15/2023 21:00] josieg_74479
+submissions are done on C4 look under "Make a submission" tab below "View Repo" tab for the Brahma Audit.
+
+
+[10/15/2023 21:04] josieg_74479
+From Crunchbase. "Brahma manages interactions and risk with multiple chains, dApps and instruments in a fully transparent and composable way, so you can earn yield, hedge and deploy capital in an efficient manner".
+
+
+[10/15/2023 23:38] audinarey
+Hi @Keshav 
+
+Kindly accept my friend request
+
+{Reactions}
+👍 
+
+[10/16/2023 03:08] 0xdemonnn
+sent a fr @Keshav :gummy_wink:
+
+{Reactions}
+👍 
+
+[10/16/2023 03:50] shaflow_
+I don't know how to specify a test file when running the make command,Can you give me some help please?
+
+
+[10/16/2023 04:46] norah7603
+please accept fr request @Keshav
+
+{Reactions}
+👍 
+
+[10/16/2023 05:25] 0xauditism
+so many friends
+
+{Reactions}
+tearysalute 😆 
+
+[10/16/2023 05:28] _mundhrakeshav
+So, this packing contains 4 things. 
+safeSignature: used in `checkNSignatures` function of safe, to verify signatures of owners of safe.
+
+validatorSignature: signature of `TRUSTED_VALIDATOR` verified in PolicyValidator 
+
+validatorSigLen: used to get validator signatures in `decompileSignature` function of PolicyValidator
+
+expiryEpoch: verified in PolicyValidator
+
+{Reactions}
+🫡 
+
+[10/16/2023 05:30] _mundhrakeshav
+https://discord.com/channels/810916927919620096/1161381699494621184/1162561710427738113
+
+{Reactions}
+👍 
+
+[10/16/2023 05:41] 0xdemonnn
+sent a dm, if you have free time feel free to answer it. Thanks @Keshav 😁
+
+
+[10/16/2023 05:49] 0xtendency
+What is policy commit?
+
+
+[10/16/2023 06:40] t1moh
+Policy commit is part of Trusted validator's signature
+
+{Reactions}
+🙏 (2) 
+
+[10/16/2023 06:43] _mundhrakeshav
+You can think in Policies as 32 byte offchain proof, allowing certain onchain actions.
+These policy commits are generated offchain and for every transaction the `TRUSTED_VALIDATOR` co-signs the transaction only after all the policies that the commit implies are checked. Registering policies are done offchain via an api, and the proof generated from this is updated as the policy commit
+
+{Reactions}
+🙏 (2) 
+
+[10/16/2023 08:10] aba1842
+hey @Keshav I sent you a FR, whenever you have the time to please accept
+
+
+[10/16/2023 08:12] jacobmartin0406
+@Keshav I sent you a FR. Please accept
+
+
+[10/16/2023 09:41] joesan4187
+joesan@MSI:~/2023-10-brahma/contracts$ make test_quick P=SetGovernance
+[⠘] Compiling...
+No files changed, compilation skipped
+
+Running 1 test for test/branch-trees/AddressProvider/set-governance/SetGovernance.t.sol:AddressProvider_SetGovernanceTest
+[FAIL. Reason: EvmError: Revert] setUp() (gas: 0)
+Logs:
+  Invalid ChainID
+
+Test result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 5.41s
+ 
+Ran 1 test suites: 0 tests passed, 1 failed, 0 skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/branch-trees/AddressProvider/set-governance/SetGovernance.t.sol:AddressProvider_SetGovernanceTest
+[FAIL. Reason: EvmError: Revert] setUp() (gas: 0)
+
+Encountered a total of 1 failing tests, 0 tests succeeded
+
+
+[10/16/2023 09:41] joesan4187
+does anyone know why this isn't working
+
+
+[10/16/2023 10:54] stryder1496
+the tests are still failing for me
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-216BC.png
+
+
+[10/16/2023 11:23] 0xfave
+Your mainet rpc is lacking an api key I think
+
+Use the rpc from infura
+
+
+[10/16/2023 11:24] 0xprinc
+is there any mock contract inheriting `IGnosisSafe.sol` and `IGnosisProxyFactory.sol` ?
+
+
+[10/16/2023 12:03] osmanozdemir1
+What is the entry point for console account owner to execute a transaction? Will they need to call the safe directly?
+
+
+[10/16/2023 12:04] 0xarshia
+@Keshav Hey can you please accept Fr Request of mine. thx
+
+
+[10/16/2023 12:39] rouhsamad
+hey, just started reviewing the code, so from my understanding console account can be used to perfrom transactions from "sub accounts" (validated transactions), this way we can automate transactions of users without requiring them to manually perform those transactions each time? is this the purpose of this system?
+thanks for your help
+
+
+[10/16/2023 13:05] xariextz
+@Keshav sent DM
+
+
+[10/16/2023 13:09] cryptothemex
+did you solve it?
+
+
+[10/16/2023 13:45] rouhsamad
+@Keshav I have a question regarding policy commits. It seems that a trusted validator is required to sign the transaction data with policy commits; otherwise, the execTransaction function will fail (as per the PolicyValidator contract).
+
+As you mentioned, suppose we want a sub-account to interact with Uniswap V2 for tasks like making swaps or adding liquidity. Does this imply that there is a specific commit registered in the system for these actions (interacting with Uniswap V2), and that I need to register this commit for my sub-account to perform these particular actions?
+and does this offchain services check my transaction to ensure that its not a different type of transaction before signing it with the trusted validator (for example, interacting with another contract and not uniswap v2)
+
+{Reactions}
+➕ 
+
+[10/16/2023 15:17] lourenslinde
+You are specifying a web socket for a public endpoint. Rather use an alchemy or infura endpoint (it's free). Also, not all public endpoints will allow you to specify the block height.
+
+
+[10/16/2023 15:17] _mundhrakeshav
+Policy commit is an offchain 32 byte proof containing all actions allowed
+
+These policy commits are generated offchain and for every transaction the `TRUSTED_VALIDATOR` co-signs the transaction only after all the policies that the commit implies are checked. Registering policies are done offchain via an api, and the proof generated from this is updated as the policy commit.
+
+Therefore a policy/policy commit can include multiple allowed actions.
+
+
+[10/16/2023 15:20] _mundhrakeshav
+Yep, the checks are made at off chain service that only actions user is trying to perform are allowed actions
+
+
+[10/16/2023 15:39] rouhsamad
+Right , thanks
+
+
+[10/16/2023 18:34] lilyjjo
+@Keshav sent you a friend req
+
+
+[10/16/2023 19:38] 0xad1
+You can use GnosisSafe.sol in the safe-contracts lib
+
+
+[10/16/2023 19:44] 0xdetermination
+@Keshav sent FR
+
+
+[10/16/2023 20:02] hx0111.
+@Keshav  please accept fr
+
+
+[10/16/2023 21:25] aba1842
+out of curiosity, why `11 November 2000`? 😄 (from the tests 0x3131204E6F76656D6265722032303030)
+
+{Reactions}
+🤣 
+
+[10/16/2023 23:33] _mundhrakeshav
+https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol
+
+
+
+We changed the default fallback handler. To implement policy validation in `isValidSignature` function.
+
+{Embed}
+https://github.com/safe-global/safe-contracts/blob/main/contracts/handler/CompatibilityFallbackHandler.sol
+safe-contracts/contracts/handler/CompatibilityFallbackHandler.sol a...
+Safe allows secure management of blockchain assets.  - safe-global/safe-contracts
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/safe-contracts-EDE24
+
+
+[10/16/2023 23:36] _mundhrakeshav
+https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/src/core/ConsoleFallbackHandler.sol
+
+L49
+
+{Embed}
+https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/src/core/ConsoleFallbackHandler.sol
+2023-10-brahma/contracts/src/core/ConsoleFallbackHandler.sol at mai...
+Contribute to code-423n4/2023-10-brahma development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/631566f9-b0c6-4908-b492-3dcacd5d1a8d-44D0F
+
+
+[10/16/2023 23:54] _mundhrakeshav
+https://discord.com/channels/810916927919620096/1161381699494621184/1162561710427738113
+
+
+[10/16/2023 23:59] 0xdemonnn
+sent a dm @Keshav :gummy_wink:
+
+
+[10/17/2023 00:08] 0xdemonnn
+hello, what does the getModules() function on consoleFallbackHandler.sol actually do? @Keshav
+
+
+[10/17/2023 00:09] rokinot
+@Keshav sent a fr
+
+
+[10/17/2023 00:10] _mundhrakeshav
+It simply gets first 10 modules of safe in an array. It’s to keep the fallback impl similar to CompatFallbackHandler
+
+
+[10/17/2023 00:13] 0xdemonnn
+allright, thank you
+
+
+[10/17/2023 00:14] rokinot
+Hi, in the function `setAuthorizedAddress()` in the address provider, what is the `key` argument?
+
+
+[10/17/2023 00:18] _mundhrakeshav
+It’s simply a key to map address to. 
+
+https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/src/core/Constants.sol
+
+{Embed}
+https://github.com/code-423n4/2023-10-brahma/blob/main/contracts/src/core/Constants.sol
+2023-10-brahma/contracts/src/core/Constants.sol at main · code-423n...
+Contribute to code-423n4/2023-10-brahma development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/631566f9-b0c6-4908-b492-3dcacd5d1a8d-44D0F
+
+
+[10/17/2023 04:19] coffiasd
+in PolicyValidator contract  gov can set _TRUSTED_VALIDATOR_HASH role , it can be a EOA or contract  ,once the _TRUSTED_VALIDATOR_HASH be set it can't be changed again , who  will  set the _TRUSTED_VALIDATOR_HASH  ?
+
+
+[10/17/2023 04:20] coffiasd
+@Keshav
+
+
+[10/17/2023 04:40] _mundhrakeshav
+All the authorised addresses are set by governance. It can be reset. It can be an EOA or a contract.
+
+
+[10/17/2023 04:49] coffiasd
+If a `_TRUSTED_VALIDATOR_HASH` role address set by gov  is EOA , how does it sign every user's tx  infomation , is this process peformed off line on frontend ?
+
+
+[10/17/2023 05:01] 0xad1
+Offchain
+
+
+[10/17/2023 05:26] aslanbekaibimov
+shouldnt Trusted Validator be exclusively an EOA?
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-91C78.png
+
+
+[10/17/2023 06:00] 0xad1
+No, it can be an EOA providing 712 signatures or smart contract providing 1271 signatures
+
+{Reactions}
+👍 (3) 
+
+[10/17/2023 06:42] coffiasd
+@0xAd1  ser Sub-accounts set guards and enable modules during creation, and according to the documentation, sub-accounts cannot remove modules themselves. Therefore, I believe sub-accounts cannot have their transactions signed by a trusted validator through an off-chain process. Are there any limitations on who can have their transactions signed by a trusted validator?
+
+
+[10/17/2023 06:46] 0xad1
+SubAccounts have 3 ways of performing txns
+
+1. Main Console Safe can execute a txn on subaccount without any policy validation via trusted validator using `execTransctionViaModule`
+2. Subaccount operators (subaccount safe owners) can execute txn on subaccount which will be validated via trusted validator through the guard when they call `execTransaction` on the subaccount
+3. Any executor registered on the subaccount can execute  txn on subaccount which will be validated via trusted validator through the executor plugin module when they call `executeTransaction` on the `ExecutorPlugin`
+
+{Reactions}
+👍 (3) 
+
+[10/17/2023 06:54] coffiasd
+Can Thoese two roles `Subaccount operators`  and  `executor registered on the subaccount` have their transactions signed by trusted validator  off-chain individually  without the assistant of  console main account ?
+
+
+[10/17/2023 06:54] coffiasd
+@0xAd1
+
+
+[10/17/2023 06:55] 0xad1
+yes
+
+
+[10/17/2023 06:56] 0xad1
+Since main console account created a subaccount and chose those operators and executors with certain policies, as long as the txns meet those policies, trusted validator will sign their transaction and the operators and executor can do transactions without needing main console account.
+
+
+[10/17/2023 07:02] coffiasd
+@0xAd1 send you a  friend request ser
+
+
+[10/17/2023 07:54] nirh
+Hey, I understood from the docs that the owner wallet of a subaccount (i.e. the owner address in the wallet registry and the enabled module on the subaccount)  should be the Console Safe, however in most of the tests the owner of subaccounts is the test contract. Is this the way it's supposed to work? or is it that way only for testing purposes?
+
+
+[10/17/2023 09:19] 0xad1
+Can you share any tests
+
+
+[10/17/2023 09:52] nirh
+Sure, for example the test file ExecutorPlugin.misc.t.sol (under ExecutorPlugin). The setup function creates a subaccount like this: ``` walletRegistry.registerWallet();
+        subSafe = IGnosisSafe(safeDeployer.deploySubAccount(owners, 1, commit, keccak256("salt")));```  which creates a subaccount with the test contract was it's owner.
+
+
+[10/17/2023 09:58] 0xad1
+yes thats solely for testing purposes
+
+
+[10/17/2023 10:53] franklin4121
+@0xAd1  sent a FR 🙏
+
+
+[10/17/2023 14:09] stealthyzzzz
+@Keshav How would a user register their existing Safe wallet to be apart of Console V2?
+
+
+[10/17/2023 14:18] xariextz
+I guess that interacting directly with Wallet Registry
+
+
+[10/17/2023 14:37] 0xad1
+correct
+
+
+[10/17/2023 14:41] xariextz
+Sent FR
+
+
+[10/18/2023 01:45] .ash_hunter
+a quick question here every time addressProviderService constructor is called by other contracts to validate the address?
+
+
+[10/18/2023 04:15] 0xad1
+Not to validate addresses but to inject address provider into all the other contracts
+
+
+[10/18/2023 04:31] .ash_hunter
+ohka i got it thank you
+
+
+[10/18/2023 04:55] 0xprinc
+`SafeDeployer.sol` as an authorized address as set by the governance manually ? 
+governance address will be an EOA or a contract ?
+
+
+[10/18/2023 05:07] pradeepselva
+yes, set by governance
+
+
+[10/18/2023 05:07] pradeepselva
+it can be both an eoa or a contract
+
+
+[10/18/2023 05:24] pascal9476
+What is the difference between operators and executors please
+
+
+[10/18/2023 05:25] pascal9476
+What exactly are authorized addresses too
+
+
+[10/18/2023 05:25] pradeepselva
+operators are owners for a subaccount and executors are registered addresses that can execute on the safe via a module. Operators are a multisig, unlike executors
+
+
+[10/18/2023 05:26] pradeepselva
+they're addresses pointing to roles/core contracts that the governance authorizes in address provider for usage across all contracts
+
+
+[10/18/2023 05:27] pascal9476
+Okay thank you
+
+
+[10/18/2023 06:22] akshata6695
+@Keshav the git clone asked to do in this section is showing no file found - https://github.com/code-423n4/2023-10-brahma/tree/main/contracts
+
+{Embed}
+https://github.com/code-423n4/2023-10-brahma/tree/main/contracts
+2023-10-brahma/contracts at main · code-423n4/2023-10-brahma
+Contribute to code-423n4/2023-10-brahma development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/631566f9-b0c6-4908-b492-3dcacd5d1a8d-44D0F
+
+
+[10/18/2023 06:46] 0xad1
+you can use the root documentation instead https://github.com/code-423n4/2023-10-brahma#tests to get up and running
+
+{Embed}
+https://github.com/code-423n4/2023-10-brahma
+GitHub - code-423n4/2023-10-brahma
+Contribute to code-423n4/2023-10-brahma development by creating an account on GitHub.
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/631566f9-b0c6-4908-b492-3dcacd5d1a8d-44D0F
+
+
+[10/18/2023 07:07] akshata6695
+Did that thanks! One question - I am using wsl and its not detecting forge. As I am working with foundry for the fist time, how do I install foundry in the system globally? Steps I am following - cloning repo, going to contracts folder, npm install, and then when using forge build, its showing forge not recognized
+
+
+[10/18/2023 07:08] 0xad1
+https://book.getfoundry.sh/getting-started/installation
+
+check this one, should work well for wsl
+
+{Embed}
+https://book.getfoundry.sh/getting-started/installation
+Foundry Book
+A book on all things Foundry
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/card-E9D38.png
+
+
+[10/18/2023 07:11] akshata6695
+Can I send you a DM?
+
+
+[10/18/2023 07:11] 0xad1
+yea
+
+
+[10/18/2023 07:12] akshata6695
+sent friend request
+
+
+[10/18/2023 09:19] 0xsorrynotsorry
+Hi @0xAd1, sent a FR
+
+{Reactions}
+thankyou 
+
+[10/18/2023 10:01] _carla_
+Hi @0xAd1, I have a question for you. I sent a FR. Thanks
+
+
+[10/18/2023 10:16] osmanozdemir1
+Will these contracts be deployed seperately on every target chain?
+
+For example 1 safeEnabler on mainnet, 1 safeEnabler on base etc, or will everything only be deployed on mainnet? @0xAd1
+
+
+[10/18/2023 10:23] fktworld
+Ethereum
+Optimism
+Base
+Avalanche C Chan
+Polygon Mainnet
+Arbitrum
+Polygon zkEVM
+Binance Smart Chain
+Fantom
+
+{Reactions}
+🫡 (3) 
+
+[10/18/2023 10:31] osmanozdemir1
+So it will be deployed on all of these, thanks 👋🏼
+
+
+[10/18/2023 11:34] 0xprinc
+hi, @0xAd1  sent FR.
+
+
+[10/19/2023 00:25] invitedtea
+@Pradeep Do you think any address can register themself as wallet in the control? or
+
+
+[10/19/2023 00:26] invitedtea
+@Pradeep i will dm you
+
+{Reactions}
+👍 
+
+[10/19/2023 07:13] brahma7456
+@Pradeep sent dm
+
+{Reactions}
+👍 
+
+[10/19/2023 08:10] hisoul22
+why is there only one trusted validator?
+
+
+[10/19/2023 08:50] 0xad1
+why is there a need for more than 1 trusted validator?
+
+
+[10/19/2023 08:57] yanchuan1
+@0xAd1 What is the purpose of the FallbackHandler, and in what situations would it be used? why isn't it allowed to be updated by sub-accounts?
+
+
+[10/19/2023 08:59] 0xad1
+Fallback handler handles any calls to gnosis safe
+
+
+[10/19/2023 09:00] 0xad1
+subaccounts should not be able to provide 1271 signatures without policy validation, hence ConsoleFallbackHandler
+
+
+[10/19/2023 09:03] 0xprinc
+`Gnosissafe.sol` is what `consoleAccount` looks like?
+
+
+[10/19/2023 09:08] 0xad1
+yes both console account and subaccount is a gnosis safe
+
+
+[10/19/2023 09:44] castle_chain
+why the subAccounts (executor) can not provide the signature directly to the `executorPlugin` which will validate the signature to the transaction validator and then to the policy validator ? and need the fallback handler ?
+
+
+[10/19/2023 10:33] yanchuan1
+@0xAd1 Can you provide more details about the policy and validator? How is the validator signature calculated? Does the validator reject signing for users? Does the validator thoroughly inspect the data of the user's request? Can we generally consider the validator signature as correct as long as the policyHash and expiryEpoch are correct?
+
+
+[10/19/2023 11:33] mrudenko
+@0xAd1 sent DM
+
+
+[10/19/2023 11:40] 0xad1
+thats how GnosisSafe is designed by safe foundation, check this https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support
+
+{Embed}
+https://ethereum.stackexchange.com/questions/122635/signing-messages-as-a-gnosis-safe-eip1271-support
+Signing messages as a Gnosis Safe (eip1271 support)
+Does Gnosis Safe have a native way to validate it's own eip1271 signatures? I know that Gnosis Safe's can have contract accounts as owners and it will verify those signatures according to eip1271 but
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/apple-touch-icon%402-EBA58.png
+
+
+[10/19/2023 11:41] 0xad1
+it thoroughly inspects the transaction its signing, makes sure no delegatecalls are happening except ones to multisend contract, simulates transaction and checks state of contracts before and after transaction, checks emitted logs and makes sure transactions adhere to policies set for the account
+
+
+[10/19/2023 11:52] castle_chain
+@0xAd1 
+is the trusted validator can be the console FallBackHandler ?? 
+or if the trusted validator will be a contract what is the implementation of it  ?
+
+
+[10/19/2023 11:53] 0xad1
+trusted validator will be none of the above
+
+
+[10/19/2023 11:53] 0xad1
+its a 712/1271 signature provider. it can be any EOA or a supported contract
+
+
+[10/19/2023 12:11] fktworld
+Friends, I want to ask a question, why the default import path is not correct? I downloaded the github code to vscode. 🙏
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/a-373CA.png
+
+
+[10/19/2023 12:12] 0xad1
+please follow the tests guide in readme of the repo
+
+
+[10/19/2023 12:14] fktworld
+The path always reports an error, why?
+
+
+[10/19/2023 12:15] fktworld
+`Source "interfaces/IAddressProviderService.sol" not found: File import callback not supported(6275)`
+
+
+[10/19/2023 12:16] 0xad1
+is your forge build working?
+
+
+[10/19/2023 12:17] fktworld
+I didn't use forge. I downloaded the GitHub source code locally and opened it with vscode.😶
+
+
+[10/19/2023 12:20] saaj_110
+import {IAddressProviderService} from "../../interfaces/IAddressProviderService.sol";
+try using this
+
+
+[10/19/2023 12:22] fktworld
+🙏 thanks
+
+
+[10/19/2023 13:30] oceansky
+anyone knows on how Main Console Account  able to remove SafeModeratorOverridable ?
+
+
+[10/19/2023 13:30] oceansky
+appreciate on what contract and function it can be found thanks
+
+
+[10/19/2023 13:33] oceansky
+is it on safehelper? using guard removal hash right?
+
+
+[10/19/2023 13:50] olanre_waju
+What exactly is policy for?
+
+
+[10/19/2023 13:52] gumgumzum
+I believe it calls setGuard on itself
+
+{Reactions}
+👍 (2) 
+
+[10/19/2023 13:55] olanre_waju
+This is how
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-5204D.png
+
+{Reactions}
+10_10 
+
+[10/19/2023 14:30] castle_chain
+should i assume that the trusted validator always will validate the tx correctly with the policy , and the policy will always prevent the sub account from doing unintended transactions ?
+
+
+[10/19/2023 15:03] 0xad1
+yes
+
+
+[10/19/2023 15:33] pascal9476
+Sent a fr 
+Pls accept
+
+
+[10/19/2023 15:34] 0xad1
+Please refrain from sending FRs and open subthreads instead
+
+{Reactions}
+🫡 
+
+[10/19/2023 15:35] pascal9476
+What exactly are policy commits can you site an example ?
+
+
+[10/19/2023 15:35] pascal9476
+If it’s possible to site an example
+
+
+[10/19/2023 15:37] 0xad1
+Transactions signable are defined by policies users set on consoles and subaccounts
+Policies range from token transfers for granular amount control, trusted recipients to whitelisted protocol interactions, intents, etc.
+These set of txn policies for an account generate a unique proof which is generated offchain and stored on chain in `policyRegistry`
+this 32 byte proof is used refer to a set of policies against which all incoming txns for that account are validated by trusted validator
+
+
+[10/19/2023 15:39] pascal9476
+Okay thank you
+
+
+[10/19/2023 19:17] taylorwebb
+@0xAd1 What type of actors in the system will `SubAccount` `Operators` (owners of the subaccount Gnosis Safe) typically be?
+
+
+[10/20/2023 04:23] 0xad1
+@0xJoker can you reply this
+
+
+[10/20/2023 05:11] 0xjoker
+When main console safe owners want to delegate some operations to external party they would create a subAccount and assign operator role to this external party.
+
+{Reactions}
+🙏 
+
+[10/20/2023 06:06] oceansky
+assignment of operator is not included in the code?
+
+
+[10/20/2023 06:08] stormreckson
+I thought this was done in `ExecutorRegistry` where it assigns an executor to each subAccount ... But executors aren't operators 🤔
+
+
+[10/20/2023 06:14] 00decree
+i reckon `_setupSubAccount()`  creates the subaccount with owners which are operators
+
+{Reactions}
+10_10 (3) 
+
+[10/20/2023 06:19] stormreckson
+The function arguments confused me .. thanks 👍
+
+
+[10/20/2023 07:11] auditwolf
+@0xJoker  please check dm ser
+
+
+[10/20/2023 10:52] 0xad1
+Please refrain from sending FRs or sending DMs and open subthreads instead and tag @0xAd1 @0xJoker @Pradeep @Keshav , this will provide visibility to the whole team for your questions and better response times
+
+{Reactions}
+👍 
+
+[10/20/2023 14:04] 0xad1
+Can you elaborate on the question
+
+
+[10/20/2023 14:06] 0xad1
+How
+
+
+[10/20/2023 15:12] t1moh
+Oh I missed that finding, thanks for clue :4739_Skeletor:
+
+{Reactions}
+4739_Skeletor (2) 😅 (3) 
+
+[10/20/2023 15:46] aba1842
+also looking into it, thanks @xiao ! 😁
+
+
+[10/20/2023 15:48] fktworld
+thanks
+
+
+[10/20/2023 15:49] 0xtendency
+Please let us know once confirmed ser, thanks @xiao
+
+{Reactions}
+thisisfine (2) 
+
+[10/20/2023 15:55] bluesky_hope_01029
+I found nothing so far, but now I can write report with this.
+
+
+[10/20/2023 16:01] borongod
+I didn't find anything, but I learned a lot about gnosis safe🤯
+
+
+[10/20/2023 16:03] hisoul22
+me too
+
+
+[10/20/2023 16:25] olanre_waju
+How are operators supposed to get sub-Account from the owners?
+
+
+[10/20/2023 16:49] oceansky
+same feeling gnosis safe , first time to study. i have urge feeling to apply it in real haha.
+
+
+[10/20/2023 17:06] 0xffchain
+`Please include at least one line number at the end of your URL`
+
+
+[10/20/2023 17:07] 0xffchain
+cant submit, it keeps saying this even when I included a permalink.
+
+
+[10/20/2023 17:07] nethoxa
+If you include columns it does not work
+
+
+[10/20/2023 17:08] nethoxa
+Like, #L123C1 does not let you
+
+
+[10/20/2023 17:08] 0xffchain
+Okay, thanks ! solved it thanks to your answer.
+
+
+[10/20/2023 17:08] its_basu
+they are delegated, they use  console account's storage
+
+
+[10/20/2023 17:10] olanre_waju
+nice one!...no response from anyone?
+
+
+[10/20/2023 17:24] its_basu
+Looked once again, when you deploy subAccount your Wallet(Console) is registered with subAccount.  and WalletRegistry has getSubAccountsForWallet method which is extenal, so Operators can get it from there.
+
+{Reactions}
+👌 
+
+[10/20/2023 17:26] olanre_waju
+Oh, so that means any operator can just lookup any sub-account and execute a txn with it as long as policy is validated?
+
+
+[10/20/2023 17:34] 0xad1
+if you are able to do that, please do and take the bounty
+
+
+[10/20/2023 17:44] its_basu
+Mission failed, we'll get em next time.
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/rn_image_picker_lib_temp_60c29da9-666c-435-1291A.jpg
+
+
+[10/20/2023 17:55] pascal9476
+Website is not opening for me again
+
+
+[10/20/2023 17:59] oceansky
+As per code, They are just simply assigned upon deployment by a registered wallet or console. Operators can only do transaction in their assigned sub account.
+
+{Reactions}
+👌 (2) 
+
+[10/20/2023 18:00] aba1842
+Permalinks or links with the cursor in it are not allowed
+
+
+[10/20/2023 20:00] ladboy233
+G
+
+
+[10/20/2023 20:01] ladboy233
+I submit a finding in the last minute, and without attaching a code reference link, yeah but should not be a big deal and impact report reading too much
+
+
+[10/20/2023 20:01] ladboy233
+lol
+
+
+[10/20/2023 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺wardens The **Brahma** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Keep an eye on #📢announcements for regular updates on how the audit is progressing through awarding 🤑🏆, judging 🧑‍⚖️ and reporting 📜. Feel free to ping a Contest-Admin if you have questions along the way!
+
+{Reactions}
+C4Keycap (15) 
+
+[10/20/2023 21:03] bowtiedvirus
+Thanks for sponsoring this audit! Hope my findings are useful to make Brahma more resilient.
+
+{Reactions}
+hi5 (2) 👏 
+
+[10/21/2023 00:51] 0xdemonnn
+Thanks for @Keshav and @0xAd1 for answering my question, hope Brahma Console can be more secure :gummy_wink:
+
+{Reactions}
+👍 (2) 
+
+[10/21/2023 02:18] 0xg03.14
+How many submissions...?
+
+
+[10/21/2023 17:14] noro9954
+what is your color theme ?
+
+
+[10/22/2023 10:15] its_basu
+Monokai Pro
+
+
+[10/26/2023 18:08] aarushiarun
+@here NOW LIVE: Auditors, gather your queries and tune in to discuss more about Brahma Console and its journey to tightline security + learn more about your submissions with the C4 team!:bullishconsole: 
+
+**Just a few mins in, feel free to tune in now: https://twitter.com/i/spaces/1zqKVqyrQzLxB**
+
+
+[11/06/2023 16:15] lsaudit
+hey, any news about the results? Any chance the're coming this week? AFAIK, escalation phase has already ended
+
+{Reactions}
+👀 (6) 
+
+[11/06/2023 16:44] ladboy233
+soon
+
+{Reactions}
+👍 💸 
+
+[11/06/2023 17:52] thebrittfactor
+🤑 🎉  Awards for **Brahma**:
+
+$3,025.06 USDC » @ABA 
+$3,025.06 USDC » @Taylor_Webb 
+$3,025.06 USDC » @bronze_pickaxe 
+$2,326.97 USDC » @imare 
+$2,326.97 USDC » @0xladboy | Sparkware 
+$1,815.04 USDC » @T1MOH 
+$1,396.18 USDC » @klau5 
+$1,396.18 USDC » @merlin 
+$1,163.48 USDC » 0xmystery 
+$197.77 USDC » @immeas 
+$168.61 USDC » 0xAnah 
+$152.13 USDC » GREY-HAWK-REACH (@aslanbek, @dimulski, @Kose and @Habib0x)
+$152.13 USDC » alexzoid 
+$152.13 USDC » @radev_sw 
+$147.60 USDC » @niroh
+
+
+[11/06/2023 17:53] thebrittfactor
+$129.70 USDC » @SovaSlava 
+$129.70 USDC » @0xVolcano 
+$129.70 USDC » @mgf15 
+$129.70 USDC » @hihen 
+$113.54 USDC » fouzantanveer 
+$113.54 USDC » @0xweb3boy 
+$113.54 USDC » @catellatech 
+$113.54 USDC » @invitedtea 
+$113.54 USDC » @DadeKuma 
+$113.54 USDC » @Lin 
+$113.54 USDC » @0xbrett8571 
+$113.54 USDC » @Bube 
+$113.54 USDC » @hunter_w3b 
+$113.54 USDC » @rahul 
+$23.96 USDC » rvierdiiev 
+$23.96 USDC » Alra 
+$23.96 USDC » @sorryNotsorry 
+$23.96 USDC » @Arz 
+$20.87 USDC » lsaudit 
+$20.87 USDC » @0x11singh99 
+$20.87 USDC » @Raihan 
+$14.47 USDC » @0xDetermination 
+$14.47 USDC » @ZanyBonzy 
+$14.47 USDC » @Bauchibred 
+$14.47 USDC » Myd 
+$14.47 USDC » digitizeworx 
+$14.47 USDC » @Albahaca 
+$14.47 USDC » LinKenji 
+$14.47 USDC » K42 
+$14.47 USDC » @xiao 
+$14.47 USDC » @0xdice91 
+$14.47 USDC » @JCK 
+$14.47 USDC » 0xSmartContract 
+$14.47 USDC » @castle_chain 
+$14.47 USDC » @SAAJ 
+$14.47 USDC » @m4ttm
+
+🏁 Findings summary
+--------------------------------------
+High risk findings: 0 unique (0 total)
+Med risk findings: 4 unique (9 total)
+Gas reports: 8 (Best: 0xAnah)
+QA reports: 8 (Best: immeas)
+Advanced analysis reports: 26 (Best: niroh)
+
+Awards will be distributed on Polygon within the next week. Congratulations all!  💸 💸 💸
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+{Reactions}
+nice 🚀 (2) 
+
+[11/06/2023 17:55] mgf15
+https://tenor.com/view/james-franco-wait-what-wut-wtf-nani-gif-25479769
+
+{Embed}
+https://tenor.com/view/james-franco-wait-what-wut-wtf-nani-gif-25479769
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/james-franco-wait-what-DE3DF.png
+
+
+[11/06/2023 17:56] ladboy233
+:10_10:
+
+
+[11/06/2023 17:56] ladboy233
+https://tenor.com/view/hasbulla-money-gif-25191018
+
+{Embed}
+https://tenor.com/view/hasbulla-money-gif-25191018
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/hasbulla-money-22B63.png
+
+{Reactions}
+😂 (6) 🍻 (5) 
+
+[11/06/2023 18:03] emerald7017
+Congrats all, for being part of the team to secure web3.
+
+{Stickers}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/783788733987815434-C3BF7.json
+
+
+[11/06/2023 18:14] 0xnirlin
+@0xepley can u spot what i can in the list
+
+
+[11/06/2023 18:16] lsaudit
+@thebrittfactor | C4  could you please take a look why I'm not marked with @ on this list (I was marked before on previous contests)
+
+
+[11/06/2023 18:31] emerald7017
+Seems like you did not verify your Discord.
+
+
+[11/06/2023 19:33] thebrittfactor
+@lsaudit - We have recently automated our awarding announcements. So if you haven't verified your Discord, you unfortunately won't be tagged.
+
+{Reactions}
+🔏 (2) 
+
+[11/06/2023 19:35] saint6704
+@merlin are you @nirlin ??
+
+{Reactions}
+😂 (11) 
+
+[11/06/2023 19:41] solodit
+I am completely different warden 😊
+
+
+[11/08/2023 12:43] unclejeff4407
+thats what @nirlin would say
+
+
+[11/08/2023 12:50] 0xnirlin
+I am completely different warden 😊
+
+
+[11/08/2023 12:50] 0xnirlin
+
+
+{Attachments}
+Code4rena - ARCHIVE-Q4-2023 - brahma-oct13 [1161381699494621184].txt_Files/image-67E04.png
+
+{Reactions}
+😂 (15) 
+
+[11/08/2023 18:17] .sy_s
+@SAQ
+
+{Reactions}
+😢 (2) 
+
+[11/08/2023 18:25] jvorex
+you done it before. can do it again! kg :hi5:
+
+
+[02/24/2024 02:44] itsmetechjay
+ℹ️ This channel is pending archive.  As a result, any private threads will be permanently deleted on Saturday, 02 March 2024. Please make sure to grab anything you might need from those before then.
+
+
+[02/29/2024 22:34] itsmetechjay
+ℹ️ Reminder: this channel will be deleted in 24 hours.
+
+
+==============================================================
+Exported 379 message(s)
+==============================================================
